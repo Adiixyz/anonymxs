@@ -21,7 +21,7 @@ exports.mess = {
     stick: `⚠️ Terjadi error saat mengirim sticker ⚠️`,
     audioMax: `❌ Gagal, kamu mengirim Audio dengan durasi lebih dari 25 detik, durasi maksimal adalah 25 detik! ❌`,
     videoMax: `❌ Gagal, kamu mengirim Video dengan durasi lebih dari 20 detik, durasi maksimal adalah 20 detik! ❌`,
-    isGroup: `⚠️ Bot ini tidak bisa masuk Group, Anonymxs hanya untuk Personal Chat ⚠️`,
+    isGroup: `⚠️ Bot ini tidak bisa masuk Group, Anonymous Chat hanya untuk Personal Chat ⚠️`,
   },
   only: {
     owner: "❌ Perintah ini hanya bisa di gunakan oleh Owner Bot! ❌",
@@ -29,7 +29,9 @@ exports.mess = {
 };
 
 exports.help = (totalUser) => {
-  return `Total Pengguna: ${totalUser.length} Orang
+  return `*ANONYMOUS CHAT*
+
+Users: ${totalUser.length}
 
 List Command:
 
@@ -43,11 +45,7 @@ List Command:
 
 - *${prefix}tnc*, Syarat dan Ketentuan Bot
 
-
-*Support Anonymxs di:*
-
-- saweria.co/rand
-- trakteer.id/lvstr`;
+Created by wa.me/60199782326`;
 };
 
 exports.tnc = () => {
@@ -67,12 +65,8 @@ Dengan menggunakan source code / bot ini maka anda setuju dengan Syarat dan Kond
     • ujaran kebencian atau diskriminasi berdasarkan usia, jenis kelamin, identitas gender, ras, seksualitas, agama, kebangsaan
 
 
-Source Code BOT : https://github.com/lvstr/Anonymxs
+Source Code BOT : https://github.com/Adiixyz/Anonymxs
 Baileys WhatsApp library: https://github.com/adiwajshing/Baileys
 
-*Support Anonymxs di:*
-- saweria.co/rand
-- trakteer.id/lvstr
-
-Best regards, Rand.`;
+Best regards, Adiixyz.`;
 };
