@@ -264,7 +264,7 @@ const starts = async () => {
         case "test":
           console.log(MessageType);
           break;
-        case "help":
+        case "menu":
           totalUser().then((res) => {
             client.sendMessage(from, lang.help(res), text);
           });
@@ -542,7 +542,7 @@ const starts = async () => {
 
           if (isOwner) {
             bctxt = body.slice(4);
-            txtbc = `*BROADCAST*\n\n${bctxt}`;
+            txtbc = `*BROADCAST ANONYMOUS CHAT*\n\n${bctxt}`;
             for (let i = 0; i < getBcUser.length; i++) {
               client.sendMessage(getBcUser[i].contactId, txtbc, text);
             }
